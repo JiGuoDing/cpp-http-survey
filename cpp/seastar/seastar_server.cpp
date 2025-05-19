@@ -1,8 +1,13 @@
-#include <seastar/http/httpd.hh>
+#include <iostream>
 #include <seastar/core/app-template.hh>
-#include <seastar/util/log.hh>
+#include <seastar/core/reactor.hh>
 
-int main()
+int main(int argc, char **argv)
 {
+    seastar::app_template app;
+    app.run(argc, argv, []
+            {
+                std::cout << "Hello world" << std::endl;
+                return seastar::make_ready_future<>(); });
     return 0;
 }
