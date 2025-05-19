@@ -1,3 +1,3 @@
 #!/bin/bash
-g++ -o server server.cpp -lpthread
-g++ -o client client.cpp -lpthread
+g++ -o executable/httplib_server httplib_server.cpp -lpthread
+g++ -o executable/httplib_client httplib_client.cpp -lpthread

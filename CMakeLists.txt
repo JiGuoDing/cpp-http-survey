@@ -3,4 +3,4 @@ project(http)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(http main.cpp)
+add_executable(http cpp/main.cpp)
