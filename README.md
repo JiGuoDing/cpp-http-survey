@@ -4,15 +4,19 @@
 
 只需要添加头文件`httplib.h`到项目中即可使用。
 
+使用简单，但性能相对较差。
+
 ```c++
 #include "httplib.h"
 ```
 
 ## Drogon 框架
 
+性能优异
+
 需要先编译源码
 
-```shell
+```sh
 git clone git@github.com:drogonframework/drogon.git
 cd drogon
 git submodule update --init
@@ -22,3 +26,20 @@ cmake ..
 make && sudo make install
 ```
 
+包含头文件
+
+```c++
+#include <drogon/drogon.h>
+```
+
+## Seastar 框架
+
+性能优异
+
+需要先编译源码
+
+```sh
+sudo ./install-dependencies.sh
+./configure.py --mode=release
+ninja -C build/release
+```
