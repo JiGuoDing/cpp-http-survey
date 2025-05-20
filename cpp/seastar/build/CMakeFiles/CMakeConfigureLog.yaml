@@ -872,3 +872,114 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/cmake/Seastar/Findrt.cmake:26 (try_compile)"
+      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:53 (find_package)"
+      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:104 (seastar_find_dep)"
+      - "/usr/local/lib/cmake/Seastar/SeastarConfig.cmake:59 (seastar_find_dependencies)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/cmake/Seastar"
+    buildResult:
+      variable: "rt_NO_EXPLICIT_LINK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55d77/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55d77.dir/build.make CMakeFiles/cmTC_55d77.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_55d77.dir/rt_test.cc.o
+        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_55d77.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
+        Linking CXX executable cmTC_55d77
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55d77.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_55d77.dir/rt_test.cc.o -o cmTC_55d77 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/cmake/Seastar/Findrt.cmake:26 (try_compile)"
+      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:53 (find_package)"
+      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:104 (seastar_find_dep)"
+      - "/usr/local/lib/cmake/Seastar/SeastarConfig.cmake:59 (seastar_find_dependencies)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/cmake/Seastar"
+    buildResult:
+      variable: "rt_NO_EXPLICIT_LINK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_89e79/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_89e79.dir/build.make CMakeFiles/cmTC_89e79.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_89e79.dir/rt_test.cc.o
+        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_89e79.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
+        Linking CXX executable cmTC_89e79
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89e79.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_89e79.dir/rt_test.cc.o -o cmTC_89e79 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/cmake/Seastar/Findrt.cmake:26 (try_compile)"
+      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:53 (find_package)"
+      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:104 (seastar_find_dep)"
+      - "/usr/local/lib/cmake/Seastar/SeastarConfig.cmake:59 (seastar_find_dependencies)"
+      - "CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/cmake/Seastar"
+    buildResult:
+      variable: "rt_NO_EXPLICIT_LINK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91c11/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_91c11.dir/build.make CMakeFiles/cmTC_91c11.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_91c11.dir/rt_test.cc.o
+        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_91c11.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
+        Linking CXX executable cmTC_91c11
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91c11.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_91c11.dir/rt_test.cc.o -o cmTC_91c11 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+...

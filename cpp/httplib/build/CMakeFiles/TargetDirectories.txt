@@ -1,0 +1,9 @@
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/regular_httplib_server.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/stream_httplib_server.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/httplib_client.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/edit_cache.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/rebuild_cache.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/list_install_components.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/install.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/install/local.dir
+/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/install/strip.dir

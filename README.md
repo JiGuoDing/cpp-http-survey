@@ -40,6 +40,6 @@ make && sudo make install
 
 ```sh
 sudo ./install-dependencies.sh
-./configure.py --mode=release
-ninja -C build/release
+./configure.py --mode=release --prefix=/usr/local
+sudo ninja -C build/release install
 ```
