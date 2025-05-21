@@ -329,6 +329,4 @@ CMakeFiles/drogon_client.dir/drogon_client.cpp.o: \
  /usr/local/include/drogon/utils/monitoring/Metric.h \
  /usr/local/include/drogon/IntranetIpFilter.h \
  /usr/local/include/drogon/LocalHostFilter.h \
- /usr/local/include/drogon/IOThreadStorage.h /usr/include/c++/13/numeric \
- /usr/include/c++/13/bits/stl_numeric.h \
- /usr/include/c++/13/pstl/glue_numeric_defs.h
+ /usr/local/include/drogon/IOThreadStorage.h

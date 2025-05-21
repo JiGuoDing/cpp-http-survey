@@ -13,7 +13,7 @@ find_package(Drogon REQUIRED)
 find_package(Jsoncpp REQUIRED)
 
 # 添加可执行文件
-add_executable(drogon_server ../drogon_server.cpp)
+add_executable(drogon_server ../regular_drogon_server.cpp)
 add_executable(drogon_client ../drogon_client.cpp)
 
 # 链接库

@@ -69,28 +69,28 @@ include CMakeFiles/drogon_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/drogon_server.dir/flags.make
 
-CMakeFiles/drogon_server.dir/drogon_server.cpp.o: CMakeFiles/drogon_server.dir/flags.make
-CMakeFiles/drogon_server.dir/drogon_server.cpp.o: /home/jgd/workplace/cpp-http-survey/cpp/drogon/drogon_server.cpp
-CMakeFiles/drogon_server.dir/drogon_server.cpp.o: CMakeFiles/drogon_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/drogon_server.dir/drogon_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drogon_server.dir/drogon_server.cpp.o -MF CMakeFiles/drogon_server.dir/drogon_server.cpp.o.d -o CMakeFiles/drogon_server.dir/drogon_server.cpp.o -c /home/jgd/workplace/cpp-http-survey/cpp/drogon/drogon_server.cpp
+CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o: CMakeFiles/drogon_server.dir/flags.make
+CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o: /home/jgd/workplace/cpp-http-survey/cpp/drogon/regular_drogon_server.cpp
+CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o: CMakeFiles/drogon_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o -MF CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o.d -o CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o -c /home/jgd/workplace/cpp-http-survey/cpp/drogon/regular_drogon_server.cpp
 
-CMakeFiles/drogon_server.dir/drogon_server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drogon_server.dir/drogon_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jgd/workplace/cpp-http-survey/cpp/drogon/drogon_server.cpp > CMakeFiles/drogon_server.dir/drogon_server.cpp.i
+CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jgd/workplace/cpp-http-survey/cpp/drogon/regular_drogon_server.cpp > CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.i
 
-CMakeFiles/drogon_server.dir/drogon_server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drogon_server.dir/drogon_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jgd/workplace/cpp-http-survey/cpp/drogon/drogon_server.cpp -o CMakeFiles/drogon_server.dir/drogon_server.cpp.s
+CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jgd/workplace/cpp-http-survey/cpp/drogon/regular_drogon_server.cpp -o CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.s
 
 # Object files for target drogon_server
 drogon_server_OBJECTS = \
-"CMakeFiles/drogon_server.dir/drogon_server.cpp.o"
+"CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o"
 
 # External object files for target drogon_server
 drogon_server_EXTERNAL_OBJECTS =
 
-/home/jgd/workplace/cpp-http-survey/executable/drogon_server: CMakeFiles/drogon_server.dir/drogon_server.cpp.o
+/home/jgd/workplace/cpp-http-survey/executable/drogon_server: CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o
 /home/jgd/workplace/cpp-http-survey/executable/drogon_server: CMakeFiles/drogon_server.dir/build.make
 /home/jgd/workplace/cpp-http-survey/executable/drogon_server: /usr/local/lib/libdrogon.a
 /home/jgd/workplace/cpp-http-survey/executable/drogon_server: /usr/local/lib/libtrantor.a

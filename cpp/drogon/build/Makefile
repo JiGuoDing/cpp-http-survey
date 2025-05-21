@@ -211,29 +211,29 @@ drogon_client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_client.dir/build.make CMakeFiles/drogon_client.dir/drogon_client.cpp.s
 .PHONY : drogon_client.cpp.s
 
-drogon_server.o: drogon_server.cpp.o
-.PHONY : drogon_server.o
+regular_drogon_server.o: regular_drogon_server.cpp.o
+.PHONY : regular_drogon_server.o
 
 # target to build an object file
-drogon_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/drogon_server.cpp.o
-.PHONY : drogon_server.cpp.o
+regular_drogon_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o
+.PHONY : regular_drogon_server.cpp.o
 
-drogon_server.i: drogon_server.cpp.i
-.PHONY : drogon_server.i
+regular_drogon_server.i: regular_drogon_server.cpp.i
+.PHONY : regular_drogon_server.i
 
 # target to preprocess a source file
-drogon_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/drogon_server.cpp.i
-.PHONY : drogon_server.cpp.i
+regular_drogon_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.i
+.PHONY : regular_drogon_server.cpp.i
 
-drogon_server.s: drogon_server.cpp.s
-.PHONY : drogon_server.s
+regular_drogon_server.s: regular_drogon_server.cpp.s
+.PHONY : regular_drogon_server.s
 
 # target to generate assembly for a file
-drogon_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/drogon_server.cpp.s
-.PHONY : drogon_server.cpp.s
+regular_drogon_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.s
+.PHONY : regular_drogon_server.cpp.s
 
 # Help Target
 help:
@@ -252,9 +252,9 @@ help:
 	@echo "... drogon_client.o"
 	@echo "... drogon_client.i"
 	@echo "... drogon_client.s"
-	@echo "... drogon_server.o"
-	@echo "... drogon_server.i"
-	@echo "... drogon_server.s"
+	@echo "... regular_drogon_server.o"
+	@echo "... regular_drogon_server.i"
+	@echo "... regular_drogon_server.s"
 .PHONY : help
 
 
