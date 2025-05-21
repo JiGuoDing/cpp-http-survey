@@ -529,3 +529,41 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/CMakeScratch/TryCompile-l7ARya"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/CMakeScratch/TryCompile-l7ARya"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/CMakeScratch/TryCompile-l7ARya'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bf5e8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bf5e8.dir/build.make CMakeFiles/cmTC_bf5e8.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/CMakeScratch/TryCompile-l7ARya'
+        Building C object CMakeFiles/cmTC_bf5e8.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bf5e8.dir/src.c.o -c /home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/CMakeScratch/TryCompile-l7ARya/src.c
+        Linking C executable cmTC_bf5e8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf5e8.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_bf5e8.dir/src.c.o -o cmTC_bf5e8 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/httplib/build/CMakeFiles/CMakeScratch/TryCompile-l7ARya'
+        
+      exitCode: 0
+...

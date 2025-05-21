@@ -20,7 +20,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/Drogon/FindJsoncpp.cmake"
   "/usr/local/lib/cmake/Drogon/FindUUID.cmake"
   "/usr/local/lib/cmake/Drogon/ParseAndAddDrogonTests.cmake"
-  "/usr/local/lib/cmake/Trantor/Findc-ares.cmake"
   "/usr/local/lib/cmake/Trantor/TrantorConfig.cmake"
   "/usr/local/lib/cmake/Trantor/TrantorConfigVersion.cmake"
   "/usr/local/lib/cmake/Trantor/TrantorTargets-noconfig.cmake"

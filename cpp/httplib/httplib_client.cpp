@@ -8,7 +8,7 @@ std::atomic<long long> total_transfer_time(0);
 
 void perform_request(const std::string& mode, int thread_id)
 {
-    httplib::Client cli("localhost", 9873);
+    httplib::Client cli("pasak8s-21", 9876);
     std::string path = (mode == "regular") ? "/regular" : "/stream";
 
     auto start = std::chrono::high_resolution_clock::now();

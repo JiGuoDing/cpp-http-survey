@@ -96,7 +96,6 @@ drogon_client_EXTERNAL_OBJECTS =
 /home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/local/lib/libtrantor.a
 /home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/lib/x86_64-linux-gnu/libssl.so
 /home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/lib/x86_64-linux-gnu/libcrypto.so
-/home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/lib/x86_64-linux-gnu/libcares.so
 /home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
 /home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/lib/x86_64-linux-gnu/libuuid.so
 /home/jgd/workplace/cpp-http-survey/executable/drogon_client: /usr/lib/x86_64-linux-gnu/libz.so
