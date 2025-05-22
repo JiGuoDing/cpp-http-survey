@@ -175,54 +175,115 @@ regular_httplib_server/fast:
 .PHONY : regular_httplib_server/fast
 
 #=============================================================================
-# Target rules for targets named stream_httplib_server
+# Target rules for targets named regular_httplib_client
 
 # Build rule for target.
-stream_httplib_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream_httplib_server
-.PHONY : stream_httplib_server
+regular_httplib_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 regular_httplib_client
+.PHONY : regular_httplib_client
 
 # fast build rule for target.
-stream_httplib_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stream_httplib_server.dir/build.make CMakeFiles/stream_httplib_server.dir/build
-.PHONY : stream_httplib_server/fast
+regular_httplib_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_httplib_client.dir/build.make CMakeFiles/regular_httplib_client.dir/build
+.PHONY : regular_httplib_client/fast
 
 #=============================================================================
-# Target rules for targets named httplib_client
+# Target rules for targets named concurrent_httplib_server
 
 # Build rule for target.
-httplib_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httplib_client
-.PHONY : httplib_client
+concurrent_httplib_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 concurrent_httplib_server
+.PHONY : concurrent_httplib_server
 
 # fast build rule for target.
-httplib_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/httplib_client.dir/build.make CMakeFiles/httplib_client.dir/build
-.PHONY : httplib_client/fast
+concurrent_httplib_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_server.dir/build.make CMakeFiles/concurrent_httplib_server.dir/build
+.PHONY : concurrent_httplib_server/fast
 
-httplib_client.o: httplib_client.cpp.o
-.PHONY : httplib_client.o
+#=============================================================================
+# Target rules for targets named concurrent_httplib_client
+
+# Build rule for target.
+concurrent_httplib_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 concurrent_httplib_client
+.PHONY : concurrent_httplib_client
+
+# fast build rule for target.
+concurrent_httplib_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_client.dir/build.make CMakeFiles/concurrent_httplib_client.dir/build
+.PHONY : concurrent_httplib_client/fast
+
+concurrent_httplib_client.o: concurrent_httplib_client.cpp.o
+.PHONY : concurrent_httplib_client.o
 
 # target to build an object file
-httplib_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/httplib_client.dir/build.make CMakeFiles/httplib_client.dir/httplib_client.cpp.o
-.PHONY : httplib_client.cpp.o
+concurrent_httplib_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_client.dir/build.make CMakeFiles/concurrent_httplib_client.dir/concurrent_httplib_client.cpp.o
+.PHONY : concurrent_httplib_client.cpp.o
 
-httplib_client.i: httplib_client.cpp.i
-.PHONY : httplib_client.i
+concurrent_httplib_client.i: concurrent_httplib_client.cpp.i
+.PHONY : concurrent_httplib_client.i
 
 # target to preprocess a source file
-httplib_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/httplib_client.dir/build.make CMakeFiles/httplib_client.dir/httplib_client.cpp.i
-.PHONY : httplib_client.cpp.i
+concurrent_httplib_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_client.dir/build.make CMakeFiles/concurrent_httplib_client.dir/concurrent_httplib_client.cpp.i
+.PHONY : concurrent_httplib_client.cpp.i
 
-httplib_client.s: httplib_client.cpp.s
-.PHONY : httplib_client.s
+concurrent_httplib_client.s: concurrent_httplib_client.cpp.s
+.PHONY : concurrent_httplib_client.s
 
 # target to generate assembly for a file
-httplib_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/httplib_client.dir/build.make CMakeFiles/httplib_client.dir/httplib_client.cpp.s
-.PHONY : httplib_client.cpp.s
+concurrent_httplib_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_client.dir/build.make CMakeFiles/concurrent_httplib_client.dir/concurrent_httplib_client.cpp.s
+.PHONY : concurrent_httplib_client.cpp.s
+
+concurrent_httplib_server.o: concurrent_httplib_server.cpp.o
+.PHONY : concurrent_httplib_server.o
+
+# target to build an object file
+concurrent_httplib_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_server.dir/build.make CMakeFiles/concurrent_httplib_server.dir/concurrent_httplib_server.cpp.o
+.PHONY : concurrent_httplib_server.cpp.o
+
+concurrent_httplib_server.i: concurrent_httplib_server.cpp.i
+.PHONY : concurrent_httplib_server.i
+
+# target to preprocess a source file
+concurrent_httplib_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_server.dir/build.make CMakeFiles/concurrent_httplib_server.dir/concurrent_httplib_server.cpp.i
+.PHONY : concurrent_httplib_server.cpp.i
+
+concurrent_httplib_server.s: concurrent_httplib_server.cpp.s
+.PHONY : concurrent_httplib_server.s
+
+# target to generate assembly for a file
+concurrent_httplib_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_httplib_server.dir/build.make CMakeFiles/concurrent_httplib_server.dir/concurrent_httplib_server.cpp.s
+.PHONY : concurrent_httplib_server.cpp.s
+
+regular_httplib_client.o: regular_httplib_client.cpp.o
+.PHONY : regular_httplib_client.o
+
+# target to build an object file
+regular_httplib_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_httplib_client.dir/build.make CMakeFiles/regular_httplib_client.dir/regular_httplib_client.cpp.o
+.PHONY : regular_httplib_client.cpp.o
+
+regular_httplib_client.i: regular_httplib_client.cpp.i
+.PHONY : regular_httplib_client.i
+
+# target to preprocess a source file
+regular_httplib_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_httplib_client.dir/build.make CMakeFiles/regular_httplib_client.dir/regular_httplib_client.cpp.i
+.PHONY : regular_httplib_client.cpp.i
+
+regular_httplib_client.s: regular_httplib_client.cpp.s
+.PHONY : regular_httplib_client.s
+
+# target to generate assembly for a file
+regular_httplib_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_httplib_client.dir/build.make CMakeFiles/regular_httplib_client.dir/regular_httplib_client.cpp.s
+.PHONY : regular_httplib_client.cpp.s
 
 regular_httplib_server.o: regular_httplib_server.cpp.o
 .PHONY : regular_httplib_server.o
@@ -248,30 +309,6 @@ regular_httplib_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_httplib_server.dir/build.make CMakeFiles/regular_httplib_server.dir/regular_httplib_server.cpp.s
 .PHONY : regular_httplib_server.cpp.s
 
-stream_httplib_server.o: stream_httplib_server.cpp.o
-.PHONY : stream_httplib_server.o
-
-# target to build an object file
-stream_httplib_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stream_httplib_server.dir/build.make CMakeFiles/stream_httplib_server.dir/stream_httplib_server.cpp.o
-.PHONY : stream_httplib_server.cpp.o
-
-stream_httplib_server.i: stream_httplib_server.cpp.i
-.PHONY : stream_httplib_server.i
-
-# target to preprocess a source file
-stream_httplib_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stream_httplib_server.dir/build.make CMakeFiles/stream_httplib_server.dir/stream_httplib_server.cpp.i
-.PHONY : stream_httplib_server.cpp.i
-
-stream_httplib_server.s: stream_httplib_server.cpp.s
-.PHONY : stream_httplib_server.s
-
-# target to generate assembly for a file
-stream_httplib_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stream_httplib_server.dir/build.make CMakeFiles/stream_httplib_server.dir/stream_httplib_server.cpp.s
-.PHONY : stream_httplib_server.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -284,18 +321,22 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... httplib_client"
+	@echo "... concurrent_httplib_client"
+	@echo "... concurrent_httplib_server"
+	@echo "... regular_httplib_client"
 	@echo "... regular_httplib_server"
-	@echo "... stream_httplib_server"
-	@echo "... httplib_client.o"
-	@echo "... httplib_client.i"
-	@echo "... httplib_client.s"
+	@echo "... concurrent_httplib_client.o"
+	@echo "... concurrent_httplib_client.i"
+	@echo "... concurrent_httplib_client.s"
+	@echo "... concurrent_httplib_server.o"
+	@echo "... concurrent_httplib_server.i"
+	@echo "... concurrent_httplib_server.s"
+	@echo "... regular_httplib_client.o"
+	@echo "... regular_httplib_client.i"
+	@echo "... regular_httplib_client.s"
 	@echo "... regular_httplib_server.o"
 	@echo "... regular_httplib_server.i"
 	@echo "... regular_httplib_server.s"
-	@echo "... stream_httplib_server.o"
-	@echo "... stream_httplib_server.i"
-	@echo "... stream_httplib_server.s"
 .PHONY : help
 
 

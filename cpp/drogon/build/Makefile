@@ -162,61 +162,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named drogon_server
+# Target rules for targets named regular_drogon_server
 
 # Build rule for target.
-drogon_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drogon_server
-.PHONY : drogon_server
+regular_drogon_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 regular_drogon_server
+.PHONY : regular_drogon_server
 
 # fast build rule for target.
-drogon_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/build
-.PHONY : drogon_server/fast
+regular_drogon_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_server.dir/build.make CMakeFiles/regular_drogon_server.dir/build
+.PHONY : regular_drogon_server/fast
 
 #=============================================================================
-# Target rules for targets named drogon_client
+# Target rules for targets named regular_drogon_client
 
 # Build rule for target.
-drogon_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drogon_client
-.PHONY : drogon_client
+regular_drogon_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 regular_drogon_client
+.PHONY : regular_drogon_client
 
 # fast build rule for target.
-drogon_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_client.dir/build.make CMakeFiles/drogon_client.dir/build
-.PHONY : drogon_client/fast
+regular_drogon_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_client.dir/build.make CMakeFiles/regular_drogon_client.dir/build
+.PHONY : regular_drogon_client/fast
 
-drogon_client.o: drogon_client.cpp.o
-.PHONY : drogon_client.o
+regular_drogon_client.o: regular_drogon_client.cpp.o
+.PHONY : regular_drogon_client.o
 
 # target to build an object file
-drogon_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_client.dir/build.make CMakeFiles/drogon_client.dir/drogon_client.cpp.o
-.PHONY : drogon_client.cpp.o
+regular_drogon_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_client.dir/build.make CMakeFiles/regular_drogon_client.dir/regular_drogon_client.cpp.o
+.PHONY : regular_drogon_client.cpp.o
 
-drogon_client.i: drogon_client.cpp.i
-.PHONY : drogon_client.i
+regular_drogon_client.i: regular_drogon_client.cpp.i
+.PHONY : regular_drogon_client.i
 
 # target to preprocess a source file
-drogon_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_client.dir/build.make CMakeFiles/drogon_client.dir/drogon_client.cpp.i
-.PHONY : drogon_client.cpp.i
+regular_drogon_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_client.dir/build.make CMakeFiles/regular_drogon_client.dir/regular_drogon_client.cpp.i
+.PHONY : regular_drogon_client.cpp.i
 
-drogon_client.s: drogon_client.cpp.s
-.PHONY : drogon_client.s
+regular_drogon_client.s: regular_drogon_client.cpp.s
+.PHONY : regular_drogon_client.s
 
 # target to generate assembly for a file
-drogon_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_client.dir/build.make CMakeFiles/drogon_client.dir/drogon_client.cpp.s
-.PHONY : drogon_client.cpp.s
+regular_drogon_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_client.dir/build.make CMakeFiles/regular_drogon_client.dir/regular_drogon_client.cpp.s
+.PHONY : regular_drogon_client.cpp.s
 
 regular_drogon_server.o: regular_drogon_server.cpp.o
 .PHONY : regular_drogon_server.o
 
 # target to build an object file
 regular_drogon_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_server.dir/build.make CMakeFiles/regular_drogon_server.dir/regular_drogon_server.cpp.o
 .PHONY : regular_drogon_server.cpp.o
 
 regular_drogon_server.i: regular_drogon_server.cpp.i
@@ -224,7 +224,7 @@ regular_drogon_server.i: regular_drogon_server.cpp.i
 
 # target to preprocess a source file
 regular_drogon_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_server.dir/build.make CMakeFiles/regular_drogon_server.dir/regular_drogon_server.cpp.i
 .PHONY : regular_drogon_server.cpp.i
 
 regular_drogon_server.s: regular_drogon_server.cpp.s
@@ -232,7 +232,7 @@ regular_drogon_server.s: regular_drogon_server.cpp.s
 
 # target to generate assembly for a file
 regular_drogon_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drogon_server.dir/build.make CMakeFiles/drogon_server.dir/regular_drogon_server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_server.dir/build.make CMakeFiles/regular_drogon_server.dir/regular_drogon_server.cpp.s
 .PHONY : regular_drogon_server.cpp.s
 
 # Help Target
@@ -247,11 +247,11 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... drogon_client"
-	@echo "... drogon_server"
-	@echo "... drogon_client.o"
-	@echo "... drogon_client.i"
-	@echo "... drogon_client.s"
+	@echo "... regular_drogon_client"
+	@echo "... regular_drogon_server"
+	@echo "... regular_drogon_client.o"
+	@echo "... regular_drogon_client.i"
+	@echo "... regular_drogon_client.s"
 	@echo "... regular_drogon_server.o"
 	@echo "... regular_drogon_server.i"
 	@echo "... regular_drogon_server.s"

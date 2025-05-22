@@ -13,15 +13,19 @@ find_package(Threads REQUIRED)
 
 # 添加可执行文件
 add_executable(regular_httplib_server ../regular_httplib_server.cpp)
-add_executable(stream_httplib_server ../stream_httplib_server.cpp)
-add_executable(httplib_client ../httplib_client.cpp)
+#add_executable(stream_httplib_server ../stream_httplib_server.cpp)
+add_executable(regular_httplib_client ../regular_httplib_client.cpp)
+add_executable(concurrent_httplib_server ../concurrent_httplib_server.cpp)
+add_executable(concurrent_httplib_client ../concurrent_httplib_client.cpp)
 
 # 链接 pthread 库到所有目标
-target_link_libraries(httplib_client PRIVATE Threads::Threads)
+target_link_libraries(regular_httplib_client PRIVATE Threads::Threads)
 target_link_libraries(regular_httplib_server PRIVATE Threads::Threads)
-target_link_libraries(stream_httplib_server PRIVATE Threads::Threads)
+target_link_libraries(concurrent_httplib_server PRIVATE Threads::Threads)
+target_link_libraries(concurrent_httplib_client PRIVATE Threads::Threads)
+#target_link_libraries(stream_httplib_server PRIVATE Threads::Threads)
 
 # 安装目标到输出目录
-install(TARGETS regular_httplib_server stream_httplib_server httplib_client
+install(TARGETS regular_httplib_server regular_httplib_client concurrent_httplib_server concurrent_httplib_client
     RUNTIME DESTINATION ${EXECUTABLE_OUTPUT_PATH}
 )

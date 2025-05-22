@@ -43,49 +43,49 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server")
+  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server"
+         FILE "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server")
+   "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable" TYPE EXECUTABLE FILES "/home/jgd/workplace/cpp-http-survey/executable/drogon_server")
-  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server")
+  file(INSTALL DESTINATION "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable" TYPE EXECUTABLE FILES "/home/jgd/workplace/cpp-http-survey/executable/regular_drogon_server")
+  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_server")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_server")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client")
+  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client"
+         FILE "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client")
+   "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable" TYPE EXECUTABLE FILES "/home/jgd/workplace/cpp-http-survey/executable/drogon_client")
-  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client")
+  file(INSTALL DESTINATION "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable" TYPE EXECUTABLE FILES "/home/jgd/workplace/cpp-http-survey/executable/regular_drogon_client")
+  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/drogon_client")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/regular_drogon_client")
     endif()
   endif()
 endif()

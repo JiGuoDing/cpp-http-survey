@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/regular_httplib_server.dir/DependInfo.cmake"
-  "CMakeFiles/stream_httplib_server.dir/DependInfo.cmake"
-  "CMakeFiles/httplib_client.dir/DependInfo.cmake"
+  "CMakeFiles/regular_httplib_client.dir/DependInfo.cmake"
+  "CMakeFiles/concurrent_httplib_server.dir/DependInfo.cmake"
+  "CMakeFiles/concurrent_httplib_client.dir/DependInfo.cmake"
   )

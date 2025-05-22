@@ -13,23 +13,23 @@ find_package(Drogon REQUIRED)
 find_package(Jsoncpp REQUIRED)
 
 # 添加可执行文件
-add_executable(drogon_server ../regular_drogon_server.cpp)
-add_executable(drogon_client ../drogon_client.cpp)
+add_executable(regular_drogon_server ../regular_drogon_server.cpp)
+add_executable(regular_drogon_client ../regular_drogon_client.cpp)
 
 # 链接库
-target_link_libraries(drogon_server
+target_link_libraries(regular_drogon_server
     PRIVATE
     Drogon::Drogon
     jsoncpp
 )
 
-target_link_libraries(drogon_client
+target_link_libraries(regular_drogon_client
     PRIVATE
     Drogon::Drogon
     jsoncpp
 )
 
 # 安装目标到输出目录
-install(TARGETS drogon_server drogon_client
+install(TARGETS regular_drogon_server regular_drogon_client
     RUNTIME DESTINATION ${EXECUTABLE_OUTPUT_PATH}
 )
