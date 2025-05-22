@@ -117,41 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named seastar_server
+# Target rules for targets named regular_seastar_server
 
 # Build rule for target.
-seastar_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seastar_server
-.PHONY : seastar_server
+regular_seastar_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 regular_seastar_server
+.PHONY : regular_seastar_server
 
 # fast build rule for target.
-seastar_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/build
-.PHONY : seastar_server/fast
+regular_seastar_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/build
+.PHONY : regular_seastar_server/fast
 
-seastar_server.o: seastar_server.cpp.o
-.PHONY : seastar_server.o
+#=============================================================================
+# Target rules for targets named regular_seastar_client
+
+# Build rule for target.
+regular_seastar_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 regular_seastar_client
+.PHONY : regular_seastar_client
+
+# fast build rule for target.
+regular_seastar_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/build
+.PHONY : regular_seastar_client/fast
+
+regular_seastar_client.o: regular_seastar_client.cpp.o
+.PHONY : regular_seastar_client.o
 
 # target to build an object file
-seastar_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/seastar_server.cpp.o
-.PHONY : seastar_server.cpp.o
+regular_seastar_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/regular_seastar_client.cpp.o
+.PHONY : regular_seastar_client.cpp.o
 
-seastar_server.i: seastar_server.cpp.i
-.PHONY : seastar_server.i
+regular_seastar_client.i: regular_seastar_client.cpp.i
+.PHONY : regular_seastar_client.i
 
 # target to preprocess a source file
-seastar_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/seastar_server.cpp.i
-.PHONY : seastar_server.cpp.i
+regular_seastar_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/regular_seastar_client.cpp.i
+.PHONY : regular_seastar_client.cpp.i
 
-seastar_server.s: seastar_server.cpp.s
-.PHONY : seastar_server.s
+regular_seastar_client.s: regular_seastar_client.cpp.s
+.PHONY : regular_seastar_client.s
 
 # target to generate assembly for a file
-seastar_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/seastar_server.cpp.s
-.PHONY : seastar_server.cpp.s
+regular_seastar_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/regular_seastar_client.cpp.s
+.PHONY : regular_seastar_client.cpp.s
+
+regular_seastar_server.o: regular_seastar_server.cpp.o
+.PHONY : regular_seastar_server.o
+
+# target to build an object file
+regular_seastar_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/regular_seastar_server.cpp.o
+.PHONY : regular_seastar_server.cpp.o
+
+regular_seastar_server.i: regular_seastar_server.cpp.i
+.PHONY : regular_seastar_server.i
+
+# target to preprocess a source file
+regular_seastar_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/regular_seastar_server.cpp.i
+.PHONY : regular_seastar_server.cpp.i
+
+regular_seastar_server.s: regular_seastar_server.cpp.s
+.PHONY : regular_seastar_server.s
+
+# target to generate assembly for a file
+regular_seastar_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/regular_seastar_server.cpp.s
+.PHONY : regular_seastar_server.cpp.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... seastar_server"
-	@echo "... seastar_server.o"
-	@echo "... seastar_server.i"
-	@echo "... seastar_server.s"
+	@echo "... regular_seastar_client"
+	@echo "... regular_seastar_server"
+	@echo "... regular_seastar_client.o"
+	@echo "... regular_seastar_client.i"
+	@echo "... regular_seastar_client.s"
+	@echo "... regular_seastar_server.o"
+	@echo "... regular_seastar_server.i"
+	@echo "... regular_seastar_server.s"
 .PHONY : help
 
 

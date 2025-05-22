@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/jgd/workplace/cpp-http-survey/cpp/seastar/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/seastar_server.dir/all
+all: CMakeFiles/regular_seastar_server.dir/all
+all: CMakeFiles/regular_seastar_client.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/seastar_server.dir/clean
+clean: CMakeFiles/regular_seastar_server.dir/clean
+clean: CMakeFiles/regular_seastar_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/seastar_server.dir
+# Target rules for target CMakeFiles/regular_seastar_server.dir
 
 # All Build rule for target.
-CMakeFiles/seastar_server.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles --progress-num=1,2 "Built target seastar_server"
-.PHONY : CMakeFiles/seastar_server.dir/all
+CMakeFiles/regular_seastar_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles --progress-num=3,4 "Built target regular_seastar_server"
+.PHONY : CMakeFiles/regular_seastar_server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/seastar_server.dir/rule: cmake_check_build_system
+CMakeFiles/regular_seastar_server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/seastar_server.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/regular_seastar_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles 0
-.PHONY : CMakeFiles/seastar_server.dir/rule
+.PHONY : CMakeFiles/regular_seastar_server.dir/rule
 
 # Convenience name for target.
-seastar_server: CMakeFiles/seastar_server.dir/rule
-.PHONY : seastar_server
+regular_seastar_server: CMakeFiles/regular_seastar_server.dir/rule
+.PHONY : regular_seastar_server
 
 # clean rule for target.
-CMakeFiles/seastar_server.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seastar_server.dir/build.make CMakeFiles/seastar_server.dir/clean
-.PHONY : CMakeFiles/seastar_server.dir/clean
+CMakeFiles/regular_seastar_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_server.dir/build.make CMakeFiles/regular_seastar_server.dir/clean
+.PHONY : CMakeFiles/regular_seastar_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/regular_seastar_client.dir
+
+# All Build rule for target.
+CMakeFiles/regular_seastar_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles --progress-num=1,2 "Built target regular_seastar_client"
+.PHONY : CMakeFiles/regular_seastar_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/regular_seastar_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/regular_seastar_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles 0
+.PHONY : CMakeFiles/regular_seastar_client.dir/rule
+
+# Convenience name for target.
+regular_seastar_client: CMakeFiles/regular_seastar_client.dir/rule
+.PHONY : regular_seastar_client
+
+# clean rule for target.
+CMakeFiles/regular_seastar_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_seastar_client.dir/build.make CMakeFiles/regular_seastar_client.dir/clean
+.PHONY : CMakeFiles/regular_seastar_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

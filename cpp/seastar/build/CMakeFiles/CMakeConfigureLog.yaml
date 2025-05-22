@@ -7,7 +7,7 @@ events:
       - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.11.0-1014-azure - x86_64
+      The system is: Linux - 6.11.0-26-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_73fc0/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_73fc0.dir/build.make CMakeFiles/cmTC_73fc0.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX'
-        Building C object CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_916fb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_916fb.dir/build.make CMakeFiles/cmTC_916fb.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh'
+        Building C object CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -87,8 +87,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_73fc0.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_73fc0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccBdJaWP.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_916fb.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_916fb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccHCST2r.s
         GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -105,15 +105,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 38987c28e967c64056a6454abdef726e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_73fc0.dir/'
-         as -v --64 -o CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o /tmp/ccBdJaWP.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_916fb.dir/'
+         as -v --64 -o CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o /tmp/ccHCST2r.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_73fc0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73fc0.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o -o cmTC_73fc0 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_916fb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_916fb.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o -o cmTC_916fb 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
@@ -126,10 +126,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_73fc0' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_73fc0.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctBnBcY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_73fc0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_73fc0' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_73fc0.'
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_916fb' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_916fb.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccuMwSt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_916fb /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_916fb' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_916fb.'
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh'
         
       exitCode: 0
   -
@@ -163,13 +163,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX']
+        ignore line: [Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_73fc0/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_73fc0.dir/build.make CMakeFiles/cmTC_73fc0.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-YIEyvX']
-        ignore line: [Building C object CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_916fb/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_916fb.dir/build.make CMakeFiles/cmTC_916fb.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-ANpGXh']
+        ignore line: [Building C object CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -179,8 +179,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_73fc0.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_73fc0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccBdJaWP.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_916fb.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_916fb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccHCST2r.s]
         ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -197,15 +197,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_73fc0.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o /tmp/ccBdJaWP.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_916fb.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o /tmp/ccHCST2r.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_73fc0]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73fc0.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o -o cmTC_73fc0 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_916fb]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_916fb.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o -o cmTC_916fb ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
@@ -218,13 +218,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_73fc0' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_73fc0.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctBnBcY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_73fc0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_916fb' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_916fb.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccuMwSt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_916fb /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cctBnBcY.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccuMwSt.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -242,7 +242,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_73fc0] ==> ignore
+          arg [cmTC_916fb] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -254,7 +254,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_73fc0.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_916fb.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -294,8 +294,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -304,13 +304,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ddffd/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ddffd.dir/build.make CMakeFiles/cmTC_ddffd.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE'
-        Building CXX object CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2e46/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2e46.dir/build.make CMakeFiles/cmTC_d2e46.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL'
+        Building CXX object CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -320,8 +320,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ddffd.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ddffd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccIRsP3L.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2e46.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d2e46.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccpo8O7z.s
         GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -342,15 +342,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: c81c05345ce537099dafd5580045814a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ddffd.dir/'
-         as -v --64 -o CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIRsP3L.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2e46.dir/'
+         as -v --64 -o CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpo8O7z.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_ddffd
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddffd.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ddffd 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d2e46
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2e46.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d2e46 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
@@ -363,10 +363,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ddffd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ddffd.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccI5H6M.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ddffd /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ddffd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ddffd.'
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2e46' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d2e46.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccewfVj8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d2e46 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2e46' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d2e46.'
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL'
         
       exitCode: 0
   -
@@ -406,13 +406,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE']
+        ignore line: [Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ddffd/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ddffd.dir/build.make CMakeFiles/cmTC_ddffd.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3To1fE']
-        ignore line: [Building CXX object CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2e46/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d2e46.dir/build.make CMakeFiles/cmTC_d2e46.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-K6DaTL']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -422,8 +422,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ddffd.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ddffd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccIRsP3L.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2e46.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d2e46.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccpo8O7z.s]
         ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -444,15 +444,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ddffd.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIRsP3L.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2e46.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpo8O7z.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_ddffd]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddffd.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ddffd ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d2e46]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2e46.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d2e46 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
@@ -465,13 +465,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ddffd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ddffd.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cccI5H6M.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ddffd /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2e46' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d2e46.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccewfVj8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d2e46 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cccI5H6M.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccewfVj8.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -489,7 +489,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ddffd] ==> ignore
+          arg [cmTC_d2e46] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -501,7 +501,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_ddffd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d2e46.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -543,8 +543,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-zivXgE"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-zivXgE"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Q5on1t"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Q5on1t"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -554,17 +554,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-zivXgE'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Q5on1t'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a4623/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a4623.dir/build.make CMakeFiles/cmTC_a4623.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-zivXgE'
-        Building C object CMakeFiles/cmTC_a4623.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a4623.dir/src.c.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-zivXgE/src.c
-        Linking C executable cmTC_a4623
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4623.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_a4623.dir/src.c.o -o cmTC_a4623 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-zivXgE'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_31c7d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_31c7d.dir/build.make CMakeFiles/cmTC_31c7d.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Q5on1t'
+        Building C object CMakeFiles/cmTC_31c7d.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_31c7d.dir/src.c.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Q5on1t/src.c
+        Linking C executable cmTC_31c7d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31c7d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_31c7d.dir/src.c.o -o cmTC_31c7d 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Q5on1t'
         
       exitCode: 0
   -
@@ -580,8 +580,8 @@ events:
     checks:
       - "Performing Test LinuxMembarrier_FOUND"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-dpAQeF"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-dpAQeF"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-HaHBlt"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-HaHBlt"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -591,17 +591,17 @@ events:
       variable: "LinuxMembarrier_FOUND"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-dpAQeF'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-HaHBlt'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cf471/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_cf471.dir/build.make CMakeFiles/cmTC_cf471.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-dpAQeF'
-        Building CXX object CMakeFiles/cmTC_cf471.dir/src.cxx.o
-        /usr/bin/c++ -DLinuxMembarrier_FOUND  -std=gnu++17 -o CMakeFiles/cmTC_cf471.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-dpAQeF/src.cxx
-        Linking CXX executable cmTC_cf471
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf471.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_cf471.dir/src.cxx.o -o cmTC_cf471  /usr/lib/x86_64-linux-gnu/liblz4.so 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-dpAQeF'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c86e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c86e.dir/build.make CMakeFiles/cmTC_4c86e.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-HaHBlt'
+        Building CXX object CMakeFiles/cmTC_4c86e.dir/src.cxx.o
+        /usr/bin/c++ -DLinuxMembarrier_FOUND  -std=gnu++20 -o CMakeFiles/cmTC_4c86e.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-HaHBlt/src.cxx
+        Linking CXX executable cmTC_4c86e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c86e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_4c86e.dir/src.cxx.o -o cmTC_4c86e  /usr/lib/x86_64-linux-gnu/liblz4.so 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-HaHBlt'
         
       exitCode: 0
   -
@@ -617,8 +617,8 @@ events:
     checks:
       - "Performing Test Sanitizers_SUPPORTED"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-c5u0Qt"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-c5u0Qt"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-viboXn"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-viboXn"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -628,17 +628,17 @@ events:
       variable: "Sanitizers_SUPPORTED"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-c5u0Qt'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-viboXn'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4b01/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e4b01.dir/build.make CMakeFiles/cmTC_e4b01.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-c5u0Qt'
-        Building CXX object CMakeFiles/cmTC_e4b01.dir/src.cxx.o
-        /usr/bin/c++ -DSanitizers_SUPPORTED  -fsanitize=address -fsanitize=undefined -std=gnu++17 -o CMakeFiles/cmTC_e4b01.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-c5u0Qt/src.cxx
-        Linking CXX executable cmTC_e4b01
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4b01.dir/link.txt --verbose=1
-        /usr/bin/c++  -fsanitize=address -fsanitize=undefined CMakeFiles/cmTC_e4b01.dir/src.cxx.o -o cmTC_e4b01  /usr/lib/x86_64-linux-gnu/liblz4.so 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-c5u0Qt'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6cd2d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6cd2d.dir/build.make CMakeFiles/cmTC_6cd2d.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-viboXn'
+        Building CXX object CMakeFiles/cmTC_6cd2d.dir/src.cxx.o
+        /usr/bin/c++ -DSanitizers_SUPPORTED  -fsanitize=address -fsanitize=undefined -std=gnu++20 -o CMakeFiles/cmTC_6cd2d.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-viboXn/src.cxx
+        Linking CXX executable cmTC_6cd2d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cd2d.dir/link.txt --verbose=1
+        /usr/bin/c++  -fsanitize=address -fsanitize=undefined CMakeFiles/cmTC_6cd2d.dir/src.cxx.o -o cmTC_6cd2d  /usr/lib/x86_64-linux-gnu/liblz4.so 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-viboXn'
         
       exitCode: 0
   -
@@ -654,8 +654,8 @@ events:
     checks:
       - "Performing Test Sanitizers_FIBER_SUPPORT"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-PShExq"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-PShExq"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-18N5No"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-18N5No"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -665,17 +665,17 @@ events:
       variable: "Sanitizers_FIBER_SUPPORT"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-PShExq'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-18N5No'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4162/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c4162.dir/build.make CMakeFiles/cmTC_c4162.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-PShExq'
-        Building CXX object CMakeFiles/cmTC_c4162.dir/src.cxx.o
-        /usr/bin/c++ -DSanitizers_FIBER_SUPPORT  -fsanitize=address -fsanitize=undefined -std=gnu++17 -o CMakeFiles/cmTC_c4162.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-PShExq/src.cxx
-        Linking CXX executable cmTC_c4162
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4162.dir/link.txt --verbose=1
-        /usr/bin/c++  -fsanitize=address -fsanitize=undefined CMakeFiles/cmTC_c4162.dir/src.cxx.o -o cmTC_c4162  /usr/lib/x86_64-linux-gnu/liblz4.so 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-PShExq'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c43f0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c43f0.dir/build.make CMakeFiles/cmTC_c43f0.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-18N5No'
+        Building CXX object CMakeFiles/cmTC_c43f0.dir/src.cxx.o
+        /usr/bin/c++ -DSanitizers_FIBER_SUPPORT  -fsanitize=address -fsanitize=undefined -std=gnu++20 -o CMakeFiles/cmTC_c43f0.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-18N5No/src.cxx
+        Linking CXX executable cmTC_c43f0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c43f0.dir/link.txt --verbose=1
+        /usr/bin/c++  -fsanitize=address -fsanitize=undefined CMakeFiles/cmTC_c43f0.dir/src.cxx.o -o cmTC_c43f0  /usr/lib/x86_64-linux-gnu/liblz4.so 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-18N5No'
         
       exitCode: 0
   -
@@ -691,8 +691,8 @@ events:
     checks:
       - "Performing Test CxxSourceLocation_SUPPORTED"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-f54LRk"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-f54LRk"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Dsf6mT"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Dsf6mT"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -702,17 +702,17 @@ events:
       variable: "CxxSourceLocation_SUPPORTED"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-f54LRk'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Dsf6mT'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b56c9/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b56c9.dir/build.make CMakeFiles/cmTC_b56c9.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-f54LRk'
-        Building CXX object CMakeFiles/cmTC_b56c9.dir/src.cxx.o
-        /usr/bin/c++ -DCxxSourceLocation_SUPPORTED  -std=c++17 -std=gnu++17 -o CMakeFiles/cmTC_b56c9.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-f54LRk/src.cxx
-        Linking CXX executable cmTC_b56c9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b56c9.dir/link.txt --verbose=1
-        /usr/bin/c++  -std=c++17 CMakeFiles/cmTC_b56c9.dir/src.cxx.o -o cmTC_b56c9  /usr/lib/x86_64-linux-gnu/liblz4.so 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-f54LRk'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae713/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae713.dir/build.make CMakeFiles/cmTC_ae713.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Dsf6mT'
+        Building CXX object CMakeFiles/cmTC_ae713.dir/src.cxx.o
+        /usr/bin/c++ -DCxxSourceLocation_SUPPORTED  -std=c++20 -std=gnu++20 -o CMakeFiles/cmTC_ae713.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Dsf6mT/src.cxx
+        Linking CXX executable cmTC_ae713
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae713.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++20 CMakeFiles/cmTC_ae713.dir/src.cxx.o -o cmTC_ae713  /usr/lib/x86_64-linux-gnu/liblz4.so 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-Dsf6mT'
         
       exitCode: 0
   -
@@ -728,8 +728,8 @@ events:
     checks:
       - "Performing Test CxxSourceLocation_IMPLEMENTS_CWG2631"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-JpiAJB"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-JpiAJB"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -739,31 +739,25 @@ events:
       variable: "CxxSourceLocation_IMPLEMENTS_CWG2631_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-JpiAJB'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0a9e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e0a9e.dir/build.make CMakeFiles/cmTC_e0a9e.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp'
-        Building CXX object CMakeFiles/cmTC_e0a9e.dir/src.cxx.o
-        /usr/bin/c++ -DCxxSourceLocation_IMPLEMENTS_CWG2631  -std=c++17 -std=gnu++17 -o CMakeFiles/cmTC_e0a9e.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp/src.cxx
-        /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp/src.cxx:4:26: error: ‘std::source_location’ has not been declared
-            4 |                          std::source_location loc = std::source_location::current()) {
-              |                          ^~~
-        /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp/src.cxx:4:58: error: ‘std::source_location’ has not been declared
-            4 |                          std::source_location loc = std::source_location::current()) {
-              |                                                          ^~~~~~~~~~~~~~~
-        /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp/src.cxx: In function ‘int test_source_location(int, int)’:
-        /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp/src.cxx:5:24: error: request for member ‘line’ in ‘loc’, which is of non-class type ‘int’
-            5 |     return line == loc.line() ? 0 : 1;
-              |                        ^~~~
-        gmake[1]: *** [CMakeFiles/cmTC_e0a9e.dir/build.make:78: CMakeFiles/cmTC_e0a9e.dir/src.cxx.o] Error 1
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-T3Kbpp'
-        gmake: *** [Makefile:127: cmTC_e0a9e/fast] Error 2
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_329fc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_329fc.dir/build.make CMakeFiles/cmTC_329fc.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-JpiAJB'
+        Building CXX object CMakeFiles/cmTC_329fc.dir/src.cxx.o
+        /usr/bin/c++ -DCxxSourceLocation_IMPLEMENTS_CWG2631  -std=c++20 -std=gnu++20 -o CMakeFiles/cmTC_329fc.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-JpiAJB/src.cxx
+        Linking CXX executable cmTC_329fc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_329fc.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++20 CMakeFiles/cmTC_329fc.dir/src.cxx.o -o cmTC_329fc  /usr/lib/x86_64-linux-gnu/liblz4.so 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-JpiAJB'
         
-      exitCode: 2
+      exitCode: 0
     runResult:
       variable: "CxxSourceLocation_IMPLEMENTS_CWG2631_EXITCODE"
       cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
@@ -778,8 +772,8 @@ events:
     checks:
       - "Performing Test StdAtomic_EXPLICIT_LINK"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-V5Ifia"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-V5Ifia"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-6Pe9xK"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-6Pe9xK"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -789,17 +783,17 @@ events:
       variable: "StdAtomic_EXPLICIT_LINK"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-V5Ifia'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-6Pe9xK'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9f046/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9f046.dir/build.make CMakeFiles/cmTC_9f046.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-V5Ifia'
-        Building CXX object CMakeFiles/cmTC_9f046.dir/src.cxx.o
-        /usr/bin/c++ -DStdAtomic_EXPLICIT_LINK  -std=gnu++17 -o CMakeFiles/cmTC_9f046.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-V5Ifia/src.cxx
-        Linking CXX executable cmTC_9f046
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f046.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_9f046.dir/src.cxx.o -o cmTC_9f046  -latomic 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-V5Ifia'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f503b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f503b.dir/build.make CMakeFiles/cmTC_f503b.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-6Pe9xK'
+        Building CXX object CMakeFiles/cmTC_f503b.dir/src.cxx.o
+        /usr/bin/c++ -DStdAtomic_EXPLICIT_LINK  -std=gnu++20 -o CMakeFiles/cmTC_f503b.dir/src.cxx.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-6Pe9xK/src.cxx
+        Linking CXX executable cmTC_f503b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f503b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f503b.dir/src.cxx.o -o cmTC_f503b  -latomic 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-6Pe9xK'
         
       exitCode: 0
   -
@@ -824,14 +818,14 @@ events:
       stdout: |
         Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a813/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_0a813.dir/build.make CMakeFiles/cmTC_0a813.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_778fb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_778fb.dir/build.make CMakeFiles/cmTC_778fb.dir/build
         gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        Building CXX object CMakeFiles/cmTC_0a813.dir/rt_test.cc.o
-        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_0a813.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
-        Linking CXX executable cmTC_0a813
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a813.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_0a813.dir/rt_test.cc.o -o cmTC_0a813 
+        Building CXX object CMakeFiles/cmTC_778fb.dir/rt_test.cc.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_778fb.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
+        Linking CXX executable cmTC_778fb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_778fb.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_778fb.dir/rt_test.cc.o -o cmTC_778fb 
         gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
         
       exitCode: 0
@@ -847,8 +841,8 @@ events:
     checks:
       - "Looking for getcontext"
     directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-x9Vnsi"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-x9Vnsi"
+      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3MObVT"
+      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3MObVT"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -858,128 +852,17 @@ events:
       variable: "ucontext_NO_EXPLICIT_LINK"
       cached: true
       stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-x9Vnsi'
+        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3MObVT'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bb458/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_bb458.dir/build.make CMakeFiles/cmTC_bb458.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-x9Vnsi'
-        Building C object CMakeFiles/cmTC_bb458.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getcontext -o CMakeFiles/cmTC_bb458.dir/CheckFunctionExists.c.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-x9Vnsi/CheckFunctionExists.c
-        Linking C executable cmTC_bb458
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb458.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getcontext CMakeFiles/cmTC_bb458.dir/CheckFunctionExists.c.o -o cmTC_bb458  /usr/lib/x86_64-linux-gnu/liblz4.so 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-x9Vnsi'
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/lib/cmake/Seastar/Findrt.cmake:26 (try_compile)"
-      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:53 (find_package)"
-      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:104 (seastar_find_dep)"
-      - "/usr/local/lib/cmake/Seastar/SeastarConfig.cmake:59 (seastar_find_dependencies)"
-      - "CMakeLists.txt:11 (find_package)"
-    directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/usr/local/lib/cmake/Seastar"
-    buildResult:
-      variable: "rt_NO_EXPLICIT_LINK"
-      cached: true
-      stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55d77/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_55d77.dir/build.make CMakeFiles/cmTC_55d77.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        Building CXX object CMakeFiles/cmTC_55d77.dir/rt_test.cc.o
-        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_55d77.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
-        Linking CXX executable cmTC_55d77
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55d77.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_55d77.dir/rt_test.cc.o -o cmTC_55d77 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/lib/cmake/Seastar/Findrt.cmake:26 (try_compile)"
-      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:53 (find_package)"
-      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:104 (seastar_find_dep)"
-      - "/usr/local/lib/cmake/Seastar/SeastarConfig.cmake:59 (seastar_find_dependencies)"
-      - "CMakeLists.txt:11 (find_package)"
-    directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/usr/local/lib/cmake/Seastar"
-    buildResult:
-      variable: "rt_NO_EXPLICIT_LINK"
-      cached: true
-      stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_89e79/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_89e79.dir/build.make CMakeFiles/cmTC_89e79.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        Building CXX object CMakeFiles/cmTC_89e79.dir/rt_test.cc.o
-        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_89e79.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
-        Linking CXX executable cmTC_89e79
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89e79.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_89e79.dir/rt_test.cc.o -o cmTC_89e79 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/local/lib/cmake/Seastar/Findrt.cmake:26 (try_compile)"
-      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:53 (find_package)"
-      - "/usr/local/lib/cmake/Seastar/SeastarDependencies.cmake:104 (seastar_find_dep)"
-      - "/usr/local/lib/cmake/Seastar/SeastarConfig.cmake:59 (seastar_find_dependencies)"
-      - "CMakeLists.txt:11 (find_package)"
-    directories:
-      source: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
-      binary: "/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/usr/local/lib/cmake/Seastar"
-    buildResult:
-      variable: "rt_NO_EXPLICIT_LINK"
-      cached: true
-      stdout: |
-        Change Dir: '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91c11/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_91c11.dir/build.make CMakeFiles/cmTC_91c11.dir/build
-        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
-        Building CXX object CMakeFiles/cmTC_91c11.dir/rt_test.cc.o
-        /usr/bin/c++   -std=gnu++17 -o CMakeFiles/cmTC_91c11.dir/rt_test.cc.o -c /usr/local/lib/cmake/Seastar/code_tests/rt_test.cc
-        Linking CXX executable cmTC_91c11
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91c11.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_91c11.dir/rt_test.cc.o -o cmTC_91c11 
-        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeTmp'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b2af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6b2af.dir/build.make CMakeFiles/cmTC_6b2af.dir/build
+        gmake[1]: Entering directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3MObVT'
+        Building C object CMakeFiles/cmTC_6b2af.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getcontext -o CMakeFiles/cmTC_6b2af.dir/CheckFunctionExists.c.o -c /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3MObVT/CheckFunctionExists.c
+        Linking C executable cmTC_6b2af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b2af.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getcontext CMakeFiles/cmTC_6b2af.dir/CheckFunctionExists.c.o -o cmTC_6b2af  /usr/lib/x86_64-linux-gnu/liblz4.so 
+        gmake[1]: Leaving directory '/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/CMakeScratch/TryCompile-3MObVT'
         
       exitCode: 0
 ...

@@ -1,3 +1,4 @@
-/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/seastar_server.dir
+/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/regular_seastar_server.dir
+/home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/regular_seastar_client.dir
 /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/edit_cache.dir
 /home/jgd/workplace/cpp-http-survey/cpp/seastar/build/CMakeFiles/rebuild_cache.dir
