@@ -142,6 +142,43 @@ regular_beast_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_beast_client.dir/build.make CMakeFiles/regular_beast_client.dir/build
 .PHONY : regular_beast_client/fast
 
+#=============================================================================
+# Target rules for targets named concurrent_beast_client
+
+# Build rule for target.
+concurrent_beast_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 concurrent_beast_client
+.PHONY : concurrent_beast_client
+
+# fast build rule for target.
+concurrent_beast_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/build
+.PHONY : concurrent_beast_client/fast
+
+concurrent_beast_client.o: concurrent_beast_client.cpp.o
+.PHONY : concurrent_beast_client.o
+
+# target to build an object file
+concurrent_beast_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/concurrent_beast_client.cpp.o
+.PHONY : concurrent_beast_client.cpp.o
+
+concurrent_beast_client.i: concurrent_beast_client.cpp.i
+.PHONY : concurrent_beast_client.i
+
+# target to preprocess a source file
+concurrent_beast_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/concurrent_beast_client.cpp.i
+.PHONY : concurrent_beast_client.cpp.i
+
+concurrent_beast_client.s: concurrent_beast_client.cpp.s
+.PHONY : concurrent_beast_client.s
+
+# target to generate assembly for a file
+concurrent_beast_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/concurrent_beast_client.cpp.s
+.PHONY : concurrent_beast_client.cpp.s
+
 regular_beast_client.o: regular_beast_client.cpp.o
 .PHONY : regular_beast_client.o
 
@@ -198,8 +235,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... concurrent_beast_client"
 	@echo "... regular_beast_client"
 	@echo "... regular_beast_server"
+	@echo "... concurrent_beast_client.o"
+	@echo "... concurrent_beast_client.i"
+	@echo "... concurrent_beast_client.s"
 	@echo "... regular_beast_client.o"
 	@echo "... regular_beast_client.i"
 	@echo "... regular_beast_client.s"

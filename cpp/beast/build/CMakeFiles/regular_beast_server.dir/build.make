@@ -92,6 +92,9 @@ regular_beast_server_EXTERNAL_OBJECTS =
 
 /home/jgd/workplace/cpp-http-survey/executable/regular_beast_server: CMakeFiles/regular_beast_server.dir/regular_beast_server.cpp.o
 /home/jgd/workplace/cpp-http-survey/executable/regular_beast_server: CMakeFiles/regular_beast_server.dir/build.make
+/home/jgd/workplace/cpp-http-survey/executable/regular_beast_server: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
+/home/jgd/workplace/cpp-http-survey/executable/regular_beast_server: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.83.0
+/home/jgd/workplace/cpp-http-survey/executable/regular_beast_server: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.83.0
 /home/jgd/workplace/cpp-http-survey/executable/regular_beast_server: CMakeFiles/regular_beast_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/jgd/workplace/cpp-http-survey/executable/regular_beast_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/regular_beast_server.dir/link.txt --verbose=$(VERBOSE)

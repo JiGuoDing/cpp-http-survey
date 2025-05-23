@@ -14,7 +14,7 @@
 std::atomic<size_t> total_bytes_transferred{0};
 std::atomic<size_t> completed_requests{0};
 std::atomic<size_t> failed_requests{0};
-std::mutex cout_mutex; // 保护std::cout
+std::mutex cout_mutex;
 
 void worker_thread(const std::string& host, int port,
                   int requests_per_thread, bool upload,
@@ -58,7 +58,7 @@ void worker_thread(const std::string& host, int port,
                 }
             }
         } catch (const std::exception& e) {
-            std::lock_guard<std::mutex> lock(cout_mutex);
+            std::lock_guard lock(cout_mutex);
             std::cerr << "Thread " << std::this_thread::get_id()
                       << " - Error: " << e.what() << "\n";
         }
@@ -86,7 +86,9 @@ int main(int argc, char* argv[]) {
     const bool upload = (std::string(argv[5]) == "upload");
 
     // 准备测试数据 (30MB)
-    const size_t data_size = 30 * 1024 * 1024;
+    // const size_t data_size = 30 * 1024 * 1024;
+    const size_t data_size = 30 * 1024;
+
     const std::string large_data(data_size, 'A');
 
     std::cout << "Starting test with " << thread_count << " threads, "

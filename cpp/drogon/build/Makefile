@@ -187,6 +187,43 @@ regular_drogon_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_drogon_client.dir/build.make CMakeFiles/regular_drogon_client.dir/build
 .PHONY : regular_drogon_client/fast
 
+#=============================================================================
+# Target rules for targets named concurrent_drogon_client
+
+# Build rule for target.
+concurrent_drogon_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 concurrent_drogon_client
+.PHONY : concurrent_drogon_client
+
+# fast build rule for target.
+concurrent_drogon_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_drogon_client.dir/build.make CMakeFiles/concurrent_drogon_client.dir/build
+.PHONY : concurrent_drogon_client/fast
+
+concurrent_drogon_client.o: concurrent_drogon_client.cpp.o
+.PHONY : concurrent_drogon_client.o
+
+# target to build an object file
+concurrent_drogon_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_drogon_client.dir/build.make CMakeFiles/concurrent_drogon_client.dir/concurrent_drogon_client.cpp.o
+.PHONY : concurrent_drogon_client.cpp.o
+
+concurrent_drogon_client.i: concurrent_drogon_client.cpp.i
+.PHONY : concurrent_drogon_client.i
+
+# target to preprocess a source file
+concurrent_drogon_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_drogon_client.dir/build.make CMakeFiles/concurrent_drogon_client.dir/concurrent_drogon_client.cpp.i
+.PHONY : concurrent_drogon_client.cpp.i
+
+concurrent_drogon_client.s: concurrent_drogon_client.cpp.s
+.PHONY : concurrent_drogon_client.s
+
+# target to generate assembly for a file
+concurrent_drogon_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_drogon_client.dir/build.make CMakeFiles/concurrent_drogon_client.dir/concurrent_drogon_client.cpp.s
+.PHONY : concurrent_drogon_client.cpp.s
+
 regular_drogon_client.o: regular_drogon_client.cpp.o
 .PHONY : regular_drogon_client.o
 
@@ -247,8 +284,12 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... concurrent_drogon_client"
 	@echo "... regular_drogon_client"
 	@echo "... regular_drogon_server"
+	@echo "... concurrent_drogon_client.o"
+	@echo "... concurrent_drogon_client.i"
+	@echo "... concurrent_drogon_client.s"
 	@echo "... regular_drogon_client.o"
 	@echo "... regular_drogon_client.i"
 	@echo "... regular_drogon_client.s"

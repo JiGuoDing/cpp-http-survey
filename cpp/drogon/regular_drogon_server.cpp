@@ -8,7 +8,7 @@ using namespace drogon;
 int main()
 {
     // 请求计数器(原子操作，线程安全)
-    std::atomic<int> request_count{0};
+    std::atomic request_count{0};
     // 总接收数据量计数器
     std::atomic<size_t> total_received_bytes{0};
 

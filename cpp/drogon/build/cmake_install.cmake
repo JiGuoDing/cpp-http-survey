@@ -90,6 +90,30 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   endif()
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable" TYPE EXECUTABLE FILES "/home/jgd/workplace/cpp-http-survey/executable/concurrent_drogon_client")
+  if(EXISTS "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jgd/workplace/cpp-http-survey/cpp/drogon/../../executable/concurrent_drogon_client")
+    endif()
+  endif()
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

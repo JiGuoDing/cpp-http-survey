@@ -11,6 +11,8 @@ std::atomic<size_t> failed_requests{0};
 void perform_test(const std::string& host, int port, int request_count, bool upload) {
     httplib::Client cli(host, port);
     constexpr  size_t data_size = 30 * 1024 * 1024; // 30MB
+    // constexpr  size_t data_size = 30 * 1024; // 30KB
+
     const std::string large_data(data_size, 'A');
 
     for (int i = 0; i < request_count; ++i) {

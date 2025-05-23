@@ -1,4 +1,5 @@
 /home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles/regular_beast_server.dir
 /home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles/regular_beast_client.dir
+/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles/concurrent_beast_client.dir
 /home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles/edit_cache.dir
 /home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles/rebuild_cache.dir

@@ -75,4 +75,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/regular_drogon_server.dir/DependInfo.cmake"
   "CMakeFiles/regular_drogon_client.dir/DependInfo.cmake"
+  "CMakeFiles/concurrent_drogon_client.dir/DependInfo.cmake"
   )

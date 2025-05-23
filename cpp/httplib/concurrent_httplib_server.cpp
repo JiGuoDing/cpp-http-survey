@@ -28,7 +28,7 @@ int main() {
         total_received_bytes += body_size;
 
         {
-            std::lock_guard<std::mutex> lock(stats_mutex);
+            std::lock_guard lock(stats_mutex);
             std::cout << "POST #" << count
                       << " from " << req.remote_addr << ":" << req.remote_port
                       << " - Size: " << body_size/(1024 * 1024) << "MB"
@@ -43,7 +43,7 @@ int main() {
         const size_t count = ++request_count;
 
         {
-            std::lock_guard<std::mutex> lock(stats_mutex);
+            std::lock_guard lock(stats_mutex);
             std::cout << "GET #" << count
                       << " from " << req.remote_addr << ":" << req.remote_port << "\n";
         }

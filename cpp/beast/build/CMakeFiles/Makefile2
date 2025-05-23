@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/jgd/workplace/cpp-http-survey/cpp/beast/build
 # The main recursive "all" target.
 all: CMakeFiles/regular_beast_server.dir/all
 all: CMakeFiles/regular_beast_client.dir/all
+all: CMakeFiles/concurrent_beast_client.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/regular_beast_server.dir/clean
 clean: CMakeFiles/regular_beast_client.dir/clean
+clean: CMakeFiles/concurrent_beast_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +85,7 @@ clean: CMakeFiles/regular_beast_client.dir/clean
 CMakeFiles/regular_beast_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_beast_server.dir/build.make CMakeFiles/regular_beast_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_beast_server.dir/build.make CMakeFiles/regular_beast_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles --progress-num=3,4 "Built target regular_beast_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles --progress-num=5,6 "Built target regular_beast_server"
 .PHONY : CMakeFiles/regular_beast_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,7 +111,7 @@ CMakeFiles/regular_beast_server.dir/clean:
 CMakeFiles/regular_beast_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_beast_client.dir/build.make CMakeFiles/regular_beast_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_beast_client.dir/build.make CMakeFiles/regular_beast_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles --progress-num=1,2 "Built target regular_beast_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles --progress-num=3,4 "Built target regular_beast_client"
 .PHONY : CMakeFiles/regular_beast_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +129,32 @@ regular_beast_client: CMakeFiles/regular_beast_client.dir/rule
 CMakeFiles/regular_beast_client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/regular_beast_client.dir/build.make CMakeFiles/regular_beast_client.dir/clean
 .PHONY : CMakeFiles/regular_beast_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/concurrent_beast_client.dir
+
+# All Build rule for target.
+CMakeFiles/concurrent_beast_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles --progress-num=1,2 "Built target concurrent_beast_client"
+.PHONY : CMakeFiles/concurrent_beast_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/concurrent_beast_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/concurrent_beast_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgd/workplace/cpp-http-survey/cpp/beast/build/CMakeFiles 0
+.PHONY : CMakeFiles/concurrent_beast_client.dir/rule
+
+# Convenience name for target.
+concurrent_beast_client: CMakeFiles/concurrent_beast_client.dir/rule
+.PHONY : concurrent_beast_client
+
+# clean rule for target.
+CMakeFiles/concurrent_beast_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/concurrent_beast_client.dir/build.make CMakeFiles/concurrent_beast_client.dir/clean
+.PHONY : CMakeFiles/concurrent_beast_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

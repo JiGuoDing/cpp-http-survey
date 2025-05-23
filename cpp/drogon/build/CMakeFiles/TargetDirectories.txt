@@ -1,5 +1,6 @@
 /home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles/regular_drogon_server.dir
 /home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles/regular_drogon_client.dir
+/home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles/concurrent_drogon_client.dir
 /home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles/edit_cache.dir
 /home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles/rebuild_cache.dir
 /home/jgd/workplace/cpp-http-survey/cpp/drogon/build/CMakeFiles/list_install_components.dir

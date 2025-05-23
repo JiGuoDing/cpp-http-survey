@@ -9,4 +9,6 @@ add_executable(http cpp/main.cpp
         cpp/httplib/concurrent_httplib_client.cpp
         cpp/httplib/concurrent_httplib_server.cpp
         cpp/beast/regular_beast_server.cpp
-        cpp/beast/regular_beast_client.cpp)
+        cpp/beast/regular_beast_client.cpp
+        cpp/drogon/concurrent_drogon_client.cpp
+        cpp/beast/concurrent_beast_client.cpp)
