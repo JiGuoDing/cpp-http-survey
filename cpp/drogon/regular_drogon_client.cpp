@@ -27,12 +27,10 @@ int main(int argc, char *argv[])
               << " with " << request_count << " requests ("
               << data_size / (1024 * 1024) << "MB each)\n";
 
-    // 统计变量
     std::atomic<size_t> total_bytes_sent{0};
     std::atomic<size_t> completed_requests{0};
     std::atomic<size_t> failed_requests{0};
 
-    // 创建客户端
     auto client = HttpClient::newHttpClient(server_address, port);
     client->setUserAgent("DrogonBenchmark/1.0");
 
@@ -45,14 +43,12 @@ int main(int argc, char *argv[])
         req->setContentTypeCode(CT_TEXT_PLAIN);
         req->setBody(large_data);
 
-        // 打印发送请求详情
         std::cout << "\n=== 发送请求 #" << i+1 << " ===\n";
         std::cout << "目标URL: http://" << server_address << ":" << port << "/receive_data\n";
         std::cout << "请求方法: POST\n";
         std::cout << "请求体大小: " << large_data.size() / (1024 * 1024) << " MB\n";
 
         client->sendRequest(req, [&, i](ReqResult result, const HttpResponsePtr& resp) {
-            // 打印响应详情
             std::cout << "\n=== 收到请求 #" << i+1 << " 的响应 ===\n";
 
             if (result == ReqResult::Ok && resp) {
@@ -83,7 +79,6 @@ int main(int argc, char *argv[])
     auto end = high_resolution_clock::now();
     auto total_duration = duration_cast<milliseconds>(end - start).count();
 
-    // 输出最终结果
     std::cout << "\n\n=== 最终测试结果 ===\n";
     std::cout << "服务器: http://" << server_address << ":" << port << "\n";
     std::cout << "总请求数: " << request_count << "\n";

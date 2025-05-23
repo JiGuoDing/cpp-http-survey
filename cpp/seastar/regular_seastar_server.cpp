@@ -5,10 +5,9 @@
 #include <seastar/core/temporary_buffer.hh>
 #include <seastar/util/log.hh>
 
-// 定义日志器
 static seastar::logger server_log("server");
 
-constexpr size_t DATA_SIZE = 30 * 1024 * 1024; // 30MB
+constexpr size_t DATA_SIZE = 30 * 1024 * 1024;
 
 seastar::future<> handle_connection(seastar::connected_socket socket) {
     auto out = socket.output();
@@ -16,13 +15,12 @@ seastar::future<> handle_connection(seastar::connected_socket socket) {
 
     server_log.info("Starting to handle new connection");
 
-    // 创建一个30MB的数据缓冲区
+
     seastar::temporary_buffer<char> data(DATA_SIZE);
-    std::fill(data.get_write(), data.get_write() + DATA_SIZE, 'A'); // 填充数据
+    std::fill(data.get_write(), data.get_write() + DATA_SIZE, 'A');
 
     server_log.info("Created 30MB data buffer, starting to send data...");
 
-    // 发送数据
     try {
         co_await out.write(data.get(), data.size());
         server_log.info("Data sent, flushing...");
@@ -33,7 +31,6 @@ seastar::future<> handle_connection(seastar::connected_socket socket) {
         throw;
     }
 
-    // 关闭连接
     try {
         server_log.info("Closing connection...");
         co_await out.close();
@@ -81,7 +78,6 @@ seastar::future<> service_loop() {
 int main(int argc, char** argv) {
     seastar::app_template app;
 
-    // 配置日志级别
     seastar::global_logger_registry().set_all_loggers_level(seastar::log_level::debug);
 
     try {

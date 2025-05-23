@@ -10,15 +10,14 @@ std::atomic<size_t> failed_requests{0};
 
 void perform_test(const std::string& host, int port, int request_count, bool upload) {
     httplib::Client cli(host, port);
-    constexpr  size_t data_size = 30 * 1024 * 1024; // 30MB
-    // constexpr  size_t data_size = 30 * 1024; // 30KB
+    constexpr  size_t data_size = 30 * 1024 * 1024;
 
     const std::string large_data(data_size, 'A');
 
     for (int i = 0; i < request_count; ++i) {
 
         if (upload) {
-            // 上传测试 (POST)
+
             auto res = cli.Post("/receive_data", large_data, "text/plain");
             if (res && res->status == 200) {
                 total_bytes_sent += data_size;
@@ -28,7 +27,7 @@ void perform_test(const std::string& host, int port, int request_count, bool upl
                 std::cerr << "Upload failed: " << (res ? res->status : -1) << "\n";
             }
         } else {
-            // 下载测试 (GET)
+
             std::string received_data;
             auto res = cli.Get("/large_data", [&](const char* data, size_t len) {
                 received_data.append(data, len);
@@ -63,13 +62,12 @@ int main(int argc, char* argv[]) {
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    // 单线程测试 (可改为多线程)
     perform_test(host, port, request_count, upload);
 
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
-    // 打印结果
+
     std::cout << "\n=== Test Results ===\n"
               << "Server: " << host << ":" << port << "\n"
               << "Mode: " << (upload ? "Upload" : "Download") << "\n"

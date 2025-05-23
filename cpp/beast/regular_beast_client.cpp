@@ -4,14 +4,13 @@
 #include <iomanip>
 #include <iostream>
 #include <thread>
-#include <cstdlib> // for atoi
+#include <cstdlib>
 
 namespace beast = boost::beast;
 namespace http = beast::http;
 namespace net = boost::asio;
 using tcp = net::ip::tcp;
 
-// 配置结构体
 struct Config {
     std::string host;
     unsigned short port;
@@ -139,7 +138,7 @@ Stats send_request(net::io_context& ioc, const Config& config) {
     Stats stats;
     stats.bytes_transferred = req.body().size();
     stats.duration = std::chrono::duration_cast<std::chrono::milliseconds>(
-        read_end - write_start); // Total roundtrip time
+        read_end - write_start);
     stats.requests_sent = 1;
 
     return stats;

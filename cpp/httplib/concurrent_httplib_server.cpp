@@ -18,10 +18,8 @@ int main() {
     // 准备30MB测试数据
     const std::string large_data(DATA_SIZE, 'A');
 
-    // 设置线程池 (建议设置为CPU核心数的2倍)
     svr.new_task_queue = [] { return new httplib::ThreadPool(32); };
 
-    // 数据接收端点
     svr.Post("/receive_data", [&](const httplib::Request& req, httplib::Response& res) {
         const size_t body_size = req.body.size();
         const size_t count = ++request_count;
@@ -38,7 +36,6 @@ int main() {
         res.set_content("Received " + std::to_string(body_size) + " bytes", "text/plain");
     });
 
-    // 大文件下载端点
     svr.Get("/large_data", [&](const httplib::Request& req, httplib::Response& res) {
         const size_t count = ++request_count;
 
@@ -51,7 +48,6 @@ int main() {
         res.set_content(large_data, "text/plain");
     });
 
-    // 统计信息端点
     svr.Get("/request_stats", [&](const httplib::Request&, httplib::Response& res) {
         std::string stats = "Total requests: " + std::to_string(request_count) +
                           "\nTotal received: " +

@@ -5,8 +5,8 @@
 
 static seastar::logger client_log("client");
 
-constexpr size_t DATA_SIZE = 30 * 1024 * 1024; // 30MB
-constexpr size_t LOG_INTERVAL = 1024 * 1024;   // 每1MB记录一次
+constexpr size_t DATA_SIZE = 30 * 1024 * 1024;
+constexpr size_t LOG_INTERVAL = 1024 * 1024;
 
 seastar::future<> client_connect() {
     seastar::socket_address addr = seastar::make_ipv4_address({"127.0.0.1", 1234});

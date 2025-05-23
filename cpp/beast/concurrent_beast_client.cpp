@@ -16,11 +16,10 @@ namespace http = beast::http;
 namespace net = boost::asio;
 using tcp = net::ip::tcp;
 
-// 配置结构体
 struct Config {
     std::string host;
     unsigned short port;
-    size_t data_size_bytes;  // 固定为30KB，不再用MB
+    size_t data_size_bytes;
     int thread_count;
     int requests_per_thread;
 };

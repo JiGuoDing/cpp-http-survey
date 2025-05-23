@@ -14,11 +14,11 @@ static std::atomic<int> thread_count{1};
 void sendRequests(const std::string& server_address, uint16_t port, int requests_per_thread,
                  size_t data_size, std::atomic<size_t>& total_bytes_sent,
                  std::atomic<size_t>& completed_requests, std::atomic<size_t>& failed_requests) {
-    // 创建线程本地客户端
+    
     auto client = HttpClient::newHttpClient(server_address, port);
     client->setUserAgent("DrogonBenchmark/1.0");
 
-    // 创建线程本地测试数据
+    
     std::string large_data(data_size, 'A');
 
     for (int i = 0; i < requests_per_thread; ++i) {
@@ -28,14 +28,14 @@ void sendRequests(const std::string& server_address, uint16_t port, int requests
         req->setContentTypeCode(CT_TEXT_PLAIN);
         req->setBody(large_data);
 
-        // 打印发送请求详情（保留原有详细日志）
+        
         std::cout << "\n=== 发送请求 #" << i+1 << " ===\n";
         std::cout << "目标URL: http://" << server_address << ":" << port << "/receive_data\n";
         std::cout << "请求方法: POST\n";
         std::cout << "请求体大小: " << large_data.size() / 1024.0 << " KB\n";
 
         client->sendRequest(req, [&, i, requests_per_thread](ReqResult result, const HttpResponsePtr& resp) {
-            // 打印响应详情（保留原有详细日志）
+            
             std::cout << "\n=== 收到请求 #" << i+1 << " 的响应 ===\n";
 
             if (result == ReqResult::Ok && resp) {
@@ -84,14 +84,12 @@ int main(int argc, char *argv[])
               << thread_count << " threads, "
               << data_size / 1024.0 << "KB each)\n";
 
-    // 统计变量
     std::atomic<size_t> total_bytes_sent{0};
     std::atomic<size_t> completed_requests{0};
     std::atomic<size_t> failed_requests{0};
 
     auto start = high_resolution_clock::now();
 
-    // 创建并启动工作线程
     std::vector<std::thread> threads;
     for (int i = 0; i < thread_count; ++i) {
         threads.emplace_back([&]() {
@@ -102,7 +100,6 @@ int main(int argc, char *argv[])
 
     app().run();
 
-    // 等待所有线程完成
     for (auto& t : threads) {
         t.join();
     }
@@ -110,13 +107,11 @@ int main(int argc, char *argv[])
     auto end = high_resolution_clock::now();
     auto total_duration = duration_cast<milliseconds>(end - start).count();
 
-    // 计算结果（仅修改这部分显示格式）
     const int total_requests = requests_per_thread * thread_count;
     const double total_seconds = total_duration / 1000.0;
     const double avg_time_per_request = total_duration / static_cast<double>(total_requests);
     const double throughput_mbps = (total_bytes_sent / (1024.0 * 1024.0)) / total_seconds;
 
-    // 输出最终结果（保留原有结构，仅修改数值显示格式）
     std::cout << "\n\n=== 最终测试结果 ===\n";
     std::cout << "服务器: http://" << server_address << ":" << port << "\n";
     std::cout << "线程数: " << thread_count << "\n";

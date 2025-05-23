@@ -10,7 +10,6 @@
 #include <mutex>
 #include "../../headers/httplib.h"
 
-// 全局统计变量
 std::atomic<size_t> total_bytes_transferred{0};
 std::atomic<size_t> completed_requests{0};
 std::atomic<size_t> failed_requests{0};
@@ -86,7 +85,6 @@ int main(int argc, char* argv[]) {
     const bool upload = (std::string(argv[5]) == "upload");
 
     // 准备测试数据 (30MB)
-    // const size_t data_size = 30 * 1024 * 1024;
     const size_t data_size = 30 * 1024;
 
     const std::string large_data(data_size, 'A');
@@ -113,7 +111,6 @@ int main(int argc, char* argv[]) {
     auto end = std::chrono::steady_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
-    // 打印统计结果
     const double total_mb = total_bytes_transferred / (1024.0 * 1024.0);
     const double mbps = (total_bytes_transferred * 8.0) / (duration * 1000.0);
 

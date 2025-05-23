@@ -13,7 +13,6 @@ int main() {
     // 准备30MB测试数据
     const std::string large_data(DATA_SIZE, 'A');
 
-    // 数据接收端点 (POST)
     svr.Post("/receive_data", [&](const httplib::Request& req, httplib::Response& res) {
         int count = ++request_count;
         size_t body_size = req.body.size();
@@ -28,7 +27,6 @@ int main() {
         res.set_content("Received " + std::to_string(body_size) + " bytes", "text/plain");
     });
 
-    // 统计信息端点 (GET)
     svr.Get("/request_stats", [&](const httplib::Request&, httplib::Response& res) {
         std::string stats = "Total requests: " + std::to_string(request_count) +
                           "\nTotal received: " + 
@@ -36,7 +34,6 @@ int main() {
         res.set_content(stats, "text/plain");
     });
 
-    // 大文件下载端点 (GET)
     svr.Get("/large_data", [&](const httplib::Request&, httplib::Response& res) {
         res.set_content(large_data, "text/plain");
     });
